@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RNG.RNGController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="63.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Number Length" wrappingWidth="247.814453125">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="generateNumberLength" layoutX="12.0" layoutY="159.0" mnemonicParsing="false" onAction="#chooseNumberLength" prefHeight="28.0" prefWidth="82.0" text="Generate">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="89.0" stroke="TRANSPARENT" strokeType="INSIDE" width="335.0" />
+      <Text fontSmoothingType="LCD" layoutX="35.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Between Two Numbers" wrappingWidth="258.814453125">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#fffbfb" fontSmoothingType="LCD" layoutX="18.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Random Number Generator" wrappingWidth="299.814453125">
+         <font>
+            <Font name="Roboto Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="randomNumberLength" editable="false" layoutX="108.0" layoutY="160.0" prefHeight="26.0" prefWidth="219.0">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </TextField>
+      <Text fontSmoothingType="LCD" layoutX="15.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" wrappingWidth="69.814453125">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="number1" layoutX="105.0" layoutY="265.0" prefHeight="26.0" prefWidth="219.0">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </TextField>
+      <Text fontSmoothingType="LCD" layoutX="15.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" wrappingWidth="69.814453125">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="number2" layoutX="105.0" layoutY="301.0" prefHeight="26.0" prefWidth="219.0">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </TextField>
+      <Text fontSmoothingType="LCD" layoutX="15.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Length" wrappingWidth="69.814453125">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="numberLengthInput" layoutX="108.0" layoutY="129.0" prefHeight="26.0" prefWidth="45.0">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </TextField>
+      <Text fontSmoothingType="LCD" layoutX="169.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Between 1 - 9)" wrappingWidth="90.814453125">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="generateRandomNumberBetweenTwoNumbers" layoutX="10.0" layoutY="340.0" mnemonicParsing="false" onAction="#chooseBetweenTwoNumbers" prefHeight="28.0" prefWidth="82.0" text="Generate">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="randomNumberBetweenTwoNumbers" editable="false" layoutX="106.0" layoutY="341.0" prefHeight="26.0" prefWidth="219.0">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </TextField>
+      <Text fontSmoothingType="LCD" layoutX="110.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play the Lotto" wrappingWidth="120.814453125">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Text>
+      <Circle fill="DODGERBLUE" layoutX="45.0" layoutY="456.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fx:id="lotto1" fill="WHITE" fontSmoothingType="LCD" layoutX="38.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="44" wrappingWidth="22.814453125">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Text>
+      <Circle fill="DODGERBLUE" layoutX="95.0" layoutY="456.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="145.0" layoutY="456.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="195.0" layoutY="456.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="245.0" layoutY="456.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="295.0" layoutY="456.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="generateLottoNumbers" layoutX="12.0" layoutY="493.0" mnemonicParsing="false" onAction="#playLotto" prefHeight="28.0" prefWidth="82.0" text="Generate">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Button>
+      <Text fx:id="lotto2" fill="WHITE" fontSmoothingType="LCD" layoutX="87.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="44" wrappingWidth="16.814453125">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lotto3" fill="WHITE" fontSmoothingType="LCD" layoutX="137.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="44" wrappingWidth="16.814453125">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lotto4" fill="WHITE" fontSmoothingType="LCD" layoutX="187.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="44" wrappingWidth="16.814453125">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lotto5" fill="WHITE" fontSmoothingType="LCD" layoutX="237.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="44" wrappingWidth="16.814453125">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lotto6" fill="WHITE" fontSmoothingType="LCD" layoutX="287.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="44" wrappingWidth="16.814453125">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
